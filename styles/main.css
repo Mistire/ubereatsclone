@@ -1,0 +1,257 @@
+.large {
+    width: 100vw;
+    margin-bottom: 80px;
+    height: auto;
+    position: relative;
+}
+
+.main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sub-main {
+    position: absolute;
+    left: 40px;
+    top: 30%;
+    width: 70%;
+    bottom: 30%;
+}
+
+@media (min-width: 1001px){
+    .sub-main h1 {
+        font-size: 50px;
+    }
+}
+
+.sub-main a {
+    text-decoration: underline;
+}
+
+.middle {
+    width: 100%;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 65% auto 1fr;
+    gap: 5px;
+}
+
+.middle-1 {
+    height: 100%;
+    background-color: white;
+    vertical-align: middle;
+    border: none;
+}
+
+.icon,
+.middle-1 .input {
+    height: 60%;
+    vertical-align: middle;
+}
+
+.middle-1 .input {
+    font-size: 16px;
+    width: calc(100% - 40px);
+    border: none;
+    margin-top: 10px;
+}
+
+select {
+    height: 100%;
+    font-size: 16px;
+    border: none;
+}
+
+.button {
+    height: 100%;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 100%;
+    min-width: 100px;
+    transition: background-color 0.15s;
+}
+
+.button:hover {
+    background-color: rgb(50, 50, 50);
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+    .sub-main h1 {
+        font-size: 25px;
+    }
+    .sub-main p {
+        font-size: 13px;
+    }
+    .middle {
+        height: 30px;
+    }
+    .middle * {
+        font-size: 14px;
+    }
+    .middle .input {
+        font-size: 14px;
+        margin: 7px 0;
+    }
+}
+
+.links {
+    width: calc(100% - 80px);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.links p {
+    text-decoration: underline;
+}
+
+@media (max-width: 850px) {
+    .links {
+    grid-template-columns: repeat(2, 1fr);
+    }
+    .middle {
+        grid-template-columns: 50% auto auto;
+    }
+}
+
+.link-image {
+    width: 100%;
+}
+
+.link-title {
+    text-decoration: none;
+}
+
+.cities,
+.countries {
+    width: calc(100% - 80px);
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 10px 0;
+}
+
+.title a {
+    text-decoration: underline;
+}
+
+.map {
+    width: 60%;
+    margin: 10px 20vw;
+}
+
+.map img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 5px;
+}
+
+.list-element {
+    height: 40px;
+    font-size: 17px;
+}
+
+.list-element a {
+    color: rgb(50, 50, 50);
+}
+
+.info {
+    border-bottom: 1px solid rgb(210, 210, 210);
+    padding-bottom: 40px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+
+@media (min-width: 601px) and (max-width: 750px) {
+    .info {
+        grid-template-columns: 1fr;
+    }
+    .list .list-element {
+        font-size: 13px;
+    }
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 200px;
+}
+
+.app-links {
+    width: 300px;
+}
+
+.app-link {
+    background-color: none;
+    border: none;
+    width: 130px;
+    margin: 4px;
+}
+
+.app-link img {
+    width: 100%;
+}
+
+.list-2{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5px;
+}
+
+.list-2 .list-element:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .sub-main p {
+        font-size: 10px;
+    }
+    .middle * {
+        font-size: 12px;
+    }
+    .middle .input {
+        font-size: 12px;
+        margin: 5px 0;
+    }
+    .info {
+        grid-template-columns: 1fr;
+    }
+    .list .list-element,
+    .links {
+        font-size: 10px;
+    }
+    .list-2 .list-element {
+        font-size: 12px;
+    }
+    .title h1 {
+        font-size: 18px;
+    }
+    .title {
+        font-size: 11px;
+    }
+    .links h1 {
+        font-size: 16px;
+    }
+}
+
+@media (min-width:601px) and (max-width: 700px) {
+    .links h1 {
+        font-size: 20px;
+    }
+}

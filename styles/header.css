@@ -1,0 +1,132 @@
+.header {
+    height: 100px;
+    margin: 0;
+    padding: 0 40px;
+    background-color: white;
+    position: fixed;
+    opacity: 0.75;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    border-bottom: 2px solid rgb(210, 210, 210);
+}
+
+.header:hover {
+    opacity: 1;
+}
+
+.left-header {
+    flex: 2;
+    min-width: 180px;
+    max-width: 200px;
+    height: 50px;
+}
+
+.icon1 {
+    margin: 10px 10px 0 0;
+}
+
+.icon1:hover {
+    cursor: pointer;
+}
+
+.icon2 {
+    margin: 10px 0 0 10px;
+}
+
+.middle-header {
+    flex: 1;
+    height: 60px;
+    max-width: 500px;
+    min-width: 50px;
+    background-color: rgb(235, 235, 235);
+    padding: 10px 15px;
+}
+
+.input-box {
+    height: auto;
+    border: none;
+    height: 40px;
+    width: calc(100% - 30px);
+    background-color: rgb(235, 235, 235);
+    vertical-align: middle;
+}
+
+.right-header {
+    flex: 3;
+    max-width: 220px;
+    height: 50px;
+}
+
+.header-button-1 {
+    width: 90px;
+    margin: 4px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.header-button-1:hover {
+    background-color: rgb(210, 210, 210);
+}
+
+.header-button-2 {
+    width: 90px;
+    margin: 4px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.header-button-2:hover {
+    background-color: rgb(50, 50, 50);
+}
+
+@media (max-width: 600px) {
+    .header {
+        height: 50px;
+        padding: 20px;
+    }
+    .left-header {
+        min-width: 90px;
+        max-width: 100px;
+        height: 25px;
+    }
+    .middle-header {
+        height: 30px;
+        min-width: 25px;
+        padding: 5px 10px;
+    }
+    .input-box {
+        height: 20px;
+        width: calc(100% - 20px);
+    }
+    .right-header {
+        max-width: 120px;
+        height: 25px;
+    }
+    .header img {
+        height: 10px;
+    }
+    .header-button-1,
+    .header-button-2 {
+        width: 50px;
+        margin: 2px;
+        height: 20px;
+        border: none;
+        font-size: 8px;
+    }
+}
