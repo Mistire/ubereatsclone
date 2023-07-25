@@ -206,7 +206,7 @@ select {
     width: 100%;
 }
 
-.app-link img:hover {
+.app-links:hover {
     cursor: pointer;
 }
 
