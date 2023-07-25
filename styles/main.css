@@ -202,12 +202,12 @@ select {
     margin: 4px;
 }
 
-.app-link img {
-    width: 100%;
+.app-link:hover {
+    cursor: pointer;
 }
 
-.app-links:hover {
-    cursor: pointer;
+.app-link img {
+    width: 100%;
 }
 
 .list-2{
