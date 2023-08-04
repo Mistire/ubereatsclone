@@ -4,15 +4,61 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Uber Home Page</title>
+        <title>Uber Home Page Clone</title>
 
-        <link rel="stylesheet" href="styles/general.css">
-        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/navigation.css">
         <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/main.css">
         <link rel="stylesheet" href="styles/footer.css">
+        <link rel="stylesheet" href="styles/general.css">
     </head>
 
     <body>
+        <nav class="navigation-container not-there">
+            <div class="navigation">
+                <div class="navigation-top">
+                    <button class="sign-up-button">
+                        <a href="https://www.ubereats.com/login-redirect/?campaign=signin_universal_link&marketing_vistor_id=1fae956a-c4d0-4f3c-9e0a-24b2c6a9d51c&redirect=%2F&guest_mode=false&app_clip=false">
+                            Sign up
+                        </a>
+                    </button>
+                    <button class="log-in-button">
+                        <a href="https://www.ubereats.com/login-redirect/?campaign=signin_universal_link&marketing_vistor_id=1fae956a-c4d0-4f3c-9e0a-24b2c6a9d51c&redirect=%2F&guest_mode=false&app_clip=false">
+                            Log in
+                        </a>
+                    </button>
+                    <p><a href="feed-your-employees/Create-a-business-account.html">
+                        Create a business account
+                    </a></p>
+                    <p><a href="your-restaurant-delivered/Add-your-restaurant.html">
+                        Add a restaurant
+                    </a></p>
+                    <p><a href="deliver-with-uber-eats/Sign-Up-to-deliver.html">
+                        Sign up to deliver
+                    </a></p>
+                </div>
+                <div class="navigation-bottom">
+                    <div class="app-logo">
+                        <div><img src="photos/uber-app.svg"></div>
+                        <div>There's more to love in the app.</div>
+                    </div>
+                    <div class="nav-app-links">
+                        <a href="https://apps.apple.com/us/app/uber-eats-food-delivery/id1058959277">
+                            <button>
+                                <img src="icons/apple.png">iPhone
+                            </button>
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=com.ubercab.eats">
+                            <button>
+                                <img src="icons/android.png">Android
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="navigation-background"></div>
+        </nav>
+        
         <header class="header">
             <div class="left-header">
                 <img class="icon1" src="icons/hamburger-menu.png">
@@ -529,6 +575,8 @@
                 <div>&#169 2023 Uber Technologies Inc.</div>
             </div>
         </div>
+
+        <script src="uber-eats-home-page.js"></script>
 
     </body>
 </html>
