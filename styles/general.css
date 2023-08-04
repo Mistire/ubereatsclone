@@ -6,6 +6,7 @@
 body {
     background-color: rgb(250,250,250);
     padding: 0;
+    padding-bottom: 75px;
     margin: 0;
 }
 
@@ -40,4 +41,17 @@ hr {
     .footer {
         margin: 15px;
     }
+}
+
+.transparent {
+    background-color: transparent;
+    border: none;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.not-there {
+    display: none;
 }
