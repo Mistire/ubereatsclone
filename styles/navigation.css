@@ -47,6 +47,7 @@
 
 .sign-up-button a {
     color: white;
+    text-decoration: none;
 }
 
 .sign-up-button:hover {
@@ -55,6 +56,11 @@
 
 .log-in-button {
     background-color: rgb(230, 230, 230);
+}
+
+.log-in-button a {
+    color: black;
+    text-decoration: none;
 }
 
 .log-in-button:hover {
